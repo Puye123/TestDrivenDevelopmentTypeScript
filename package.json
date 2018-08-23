@@ -1,0 +1,27 @@
+{
+  "name": "testdrivendevelopmenttypescript",
+  "version": "1.0.0",
+  "description": "typescriptで書籍「[テスト駆動開発](http://shop.ohmsha.co.jp/shopdetail/000000004967/)」のコードを写経するリポジトリ",
+  "main": "HelloWorld.js",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "typemoq": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/mocha": "^5.2.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Puye123/TestDrivenDevelopmentTypeScript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Puye123/TestDrivenDevelopmentTypeScript/issues"
+  },
+  "homepage": "https://github.com/Puye123/TestDrivenDevelopmentTypeScript#readme"
+}

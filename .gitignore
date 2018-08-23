@@ -1,0 +1,2 @@
+# node_modulesフォルダをgit管理下から除外
+node_modules/
