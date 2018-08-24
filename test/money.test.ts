@@ -9,4 +9,7 @@ describe("MoneyTest", () => {
         product = five.Times(3);
         chai.assert.equal(product.amount, 15);
     })
+    it('testEquality', () => {
+        chai.assert.isTrue(new Dollar(5).equals(new Dollar(5)));
+    })
 });
