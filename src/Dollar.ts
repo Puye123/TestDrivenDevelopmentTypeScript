@@ -7,6 +7,7 @@ export class Dollar {
         return new Dollar(this.amount * multiplier);
     }
     public equals(obj: Object) : boolean {
-        return true;
+        var dollar = obj as Dollar;
+        return this.amount == dollar.amount;
     }
 }

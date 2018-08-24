@@ -11,5 +11,6 @@ describe("MoneyTest", () => {
     })
     it('testEquality', () => {
         chai.assert.isTrue(new Dollar(5).equals(new Dollar(5)));
+        chai.assert.isFalse(new Dollar(5).equals(new Dollar(6)));
     })
 });
