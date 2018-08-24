@@ -4,7 +4,9 @@ import { Dollar } from '../src/Dollar';
 describe("MoneyTest", () => {
     it('testMutiplication', () => {
         var five = new Dollar(5);
-        five.Times(2);
-        chai.assert.equal(five.amount, 10);
+        var product = five.Times(2);
+        chai.assert.equal(product.amount, 10);
+        product = five.Times(3);
+        chai.assert.equal(product.amount, 15);
     })
 });
