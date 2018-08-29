@@ -3,16 +3,18 @@
   "version": "1.0.0",
   "description": "typescriptで書籍「[テスト駆動開発](http://shop.ohmsha.co.jp/shopdetail/000000004967/)」のコードを写経するリポジトリ",
   "main": "HelloWorld.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/mocha": "^5.2.5",
     "chai": "^4.1.2",
     "typemoq": "^2.1.0"
   },
-  "devDependencies": {
-    "@types/chai": "^4.1.4",
-    "@types/mocha": "^5.2.5"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run build-ts",
+    "test": "npm run test-js",
+    "build-ts": "tsc",
+    "test-js": "mocha ./build/test/*.test.js"
   },
   "repository": {
     "type": "git",
