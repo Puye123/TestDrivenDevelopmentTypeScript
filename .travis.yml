@@ -3,6 +3,7 @@ node_js:
   - "stable"
 os:
   - osx
+before_script:
+  - sh unittest_env.sh
 script:
   - npm run build
-  
