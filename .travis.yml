@@ -1,12 +1,24 @@
 language: node_js
 node_js:
   - "6"
+
 os:
   - osx
+
 sudo: false
+
 before_install:
   - npm install chai typemoq --save-dev
   - npm install @types/{mocha,chai} --save-dev
+install:
+  - npm uninstall typescript --no-save
+  - npm uninstall tslint --no-save
+  - npm install
+
+cache:
+  directories:
+    - node_modules
+    
 script:
   - npm run build
   - npm run test
