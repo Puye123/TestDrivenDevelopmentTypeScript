@@ -1,10 +1,11 @@
 language: node_js
 node_js:
-  - "stable"
+  - "6"
 os:
   - osx
 before_install:
-  - npm install typescript mocha
-  - sh unittest_env.sh
+  - npm install -g typescript mocha istanbul remap-istanbul postinstall-build
+  - npm install chai typemoq --save-dev
+  - npm install @types/{mocha,chai} --save-dev
 script:
   - npm run build
