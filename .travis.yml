@@ -9,3 +9,4 @@ before_install:
   - npm install @types/{mocha,chai} --save-dev
 script:
   - npm run build
+  - npm run test
