@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/Puye123/TestDrivenDevelopmentTypeScript/issues"
   },
-  "homepage": "https://github.com/Puye123/TestDrivenDevelopmentTypeScript#readme"
+  "homepage": "https://github.com/Puye123/TestDrivenDevelopmentTypeScript#readme",
+  "directories": {
+    "test": "test"
+  }
 }
