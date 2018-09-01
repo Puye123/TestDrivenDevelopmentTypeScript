@@ -4,7 +4,7 @@ node_js:
 os:
   - osx
 before_install:
-  - npm install typescript mocha istanbul remap-istanbul postinstall-build
+  - npm install typescript mocha
   - sh unittest_env.sh
 script:
   - npm run build
